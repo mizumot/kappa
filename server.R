@@ -432,7 +432,7 @@ shinyServer(function(input, output) {
         cat("\n")
         cat("95% confidence interval (CI) of kappa", "\n")
         
-        res2 <- Kappam(dat, method = "Fleiss", conf.level=0.95)
+        res2 <- KappaM(dat, method = "Fleiss", conf.level=0.95)
         print(res2)
         
     })
@@ -607,7 +607,7 @@ shinyServer(function(input, output) {
     cat("\n")
     cat("95% confidence interval (CI) of kappa", "\n")
   
-    res2 <- Kappam(dat, method = "Fleiss", conf.level=0.95)
+    res2 <- KappaM(dat, method = "Fleiss", conf.level=0.95)
     print(res2)
   
   })
